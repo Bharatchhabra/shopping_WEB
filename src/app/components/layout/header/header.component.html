@@ -1,11 +1,11 @@
 <div class="header-area">
   <!-- Mainmenu Area Start -->
-  <div class="mainmenu-area header-sticky fixed navbar" style="position: fixed;" >
-      <div class="full-container">
+  <div class="mainmenu-area header-sticky fixed-top navbar " >
+      <div class="full-container" style="width: 100%;">
           <div class="row">
               
-              <div class="col-xl-10 col-lg-10 display-none-md display-none-xs">
-                  <div class="main-menu">
+              <div class="col-xl-5 col-lg-5 display-none-md display-none-xs  ">
+                  <div class="main-menu ">
                       
                       <nav>
                           <ul>
@@ -15,7 +15,13 @@
                               <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/product">Product</a>
                                  
                               </li>
-                              <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/collection">Collection</a>
+                              <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/shop">Shop</a>
+                                 
+                              </li>
+                              <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/wishlist">Wishlist</a>
+                                 
+                              </li>
+                              <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/blog">Blog</a>
                                  
                               </li>
                               <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/contact">Contact</a>
@@ -25,22 +31,22 @@
                       </nav>
                   </div>
               </div>
-              <!-- <div class="col-xl-2 col-lg-2 col-5">
+              <div class="col-xl-2 col-lg-2 col-5">
                   <div class="logo text-center">
-                      <a routerLink="/home"></a>
+                      <a><img src="../../../../assets/img/logo/logo-white.png" alt="NEGO"></a>
                   </div>
-              </div> -->
-              <div class="col-xl-2 col-lg-2 col-7">
+              </div>
+              <div class="col-xl-5 col-lg-5 col-7">
                   <div class="header-content d-flex justify-content-end">
                       <div class="search-wrapper">
-                          <a href="#"><i class="icon ion-ios-search-strong"></i></a>
-                          <form action="#" class="search-form">
+                          <a ><i class="icon ion-ios-search-strong"></i></a>
+                          <form  class="search-form">
                               <input type="text" placeholder="Enter your search...">
                               <button type="button"><i class="icon ion-ios-search-strong"></i></button>
                           </form>
                       </div>
                       <div class="cart-wrapper">
-                          <a routerLink="/cart">
+                          <a >
                               <i class="icon ion-bag"></i>
                               <!-- <span>2</span> -->
                           </a>
@@ -98,22 +104,6 @@
       </div>
   </div>
   <!-- Mainmenu Area End -->
-  <!-- Mobile Menu Area Start -->
-  <div class="mobile-menu-area">
-      <div class="mobile-menu container">
-          <nav id="mobile-menu-active">
-              <ul class="menu-overflow">
-                  <li><a routerLink="/home">HOME</a>
-                      
-                  </li>
-                  <li><a routerLink="/product">Product</a>
-                  </li>
-                  <li><a routerLink="/collection">Collection</a></li>
-                  <li><a routerLink="/account">Account</a></li>
-                  <li><a routerLink="/contact">Contact</a></li>
-              </ul>
-          </nav>							
-      </div>
-  </div>
-  <!-- Mobile Menu Area End -->
+  
+ 
 </div>

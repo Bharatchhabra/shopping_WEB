@@ -21,6 +21,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SliderhomeComponent } from './components/site/sliderhome/sliderhome.component';
 // import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { BlogComponent } from './components/site/blog/blog.component';
+import { ErrorComponent } from './components/site/error/error.component'
 
 
 @NgModule({
@@ -40,10 +43,13 @@ import { SliderhomeComponent } from './components/site/sliderhome/sliderhome.com
     CustomerprofilepageComponent,
     CartComponent,
     SliderhomeComponent,
+    BlogComponent,
+    ErrorComponent,
     
   ],
   imports: [
     BrowserModule,
+    GoogleMapsModule,
     AppRoutingModule,
     SlickCarouselModule,
     IvyCarouselModule,

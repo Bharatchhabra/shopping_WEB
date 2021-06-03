@@ -37,14 +37,14 @@
 /*----------------------------------------*/
 /*  2. Header Area
 /*----------------------------------------*/
-.logo a{color: #f2f2f2;font-weight: 600;font-size: 30px;margin-top: 15px;font-style: italic;}
+.logo a{color: #f2f2f2;font-weight: 600;font-size: 30px;font-style: italic;}
 .header-area, .header-two-area, .header-three-area, .header-four-area, .header-five-area {
     position: relative;
     z-index: 99;
     color: #fff
 }
 .fixed {left: 0; position: absolute; width: 100%; z-index: 99;}
-.mainmenu-area {padding: 60px 0;}
+.mainmenu-area {padding: 60px 0; }
 .main-menu > nav > ul {display: -webkit-box;display: -ms-flexbox;display: flex; position: relative;}
 .main-menu > nav > ul > li {margin-right: 48px; position: relative;}
 .main-menu > nav > ul > li.megamenu {position: unset;}
@@ -156,7 +156,7 @@
     font-weight: 500;
     left: 0;
     position: absolute;
-    top: 13px;
+    top: 10px;
 }
 .mean-container .mean-bar {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
 .mean-container a.meanmenu-reveal {
@@ -196,7 +196,7 @@
 form.search-form, .settings-content {
     background: #ffffff none repeat scroll 0 0;
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 100%;
     visibility: hidden;
 }
@@ -318,7 +318,8 @@ form.search-form, .settings-content {
     padding: 35px 40px;
     transition: all 0.3s ease 0s;
     width: 300px;
-    z-index: 10
+    z-index: 10;
+    left: 160px;
 }
 .settings-content h4 {
     border-bottom: 1px solid #ebebeb;
@@ -1196,6 +1197,7 @@ form.search-form, .settings-content {
     border: 1px solid #ebebeb;
     border-radius: 3px;
     display: block;
+    color: black;
     margin: 10px 8px 0 0;
     padding: 7px 18px;
     text-transform: capitalize;
@@ -1227,8 +1229,29 @@ form.search-form, .settings-content {
 }
 .page-link:hover, .page-link:focus, .page-item.active .page-link {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #ee3333;
+    color: #ee3333 !important;
 }
+
+.page-item .page-link {
+    z-index: 3;
+    color: black;
+    background-color: #fff;
+    border-color: #fff;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: black ;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.page-item:hover .page-link {
+    border: none;
+    background-color: transparent;
+}
+.page-link {
+    border: none !important;
+}
+
 /*----------------------------------------*/
 /*      16.2 Shop Page Gid/List
 /*----------------------------------------*/
@@ -2948,3 +2971,15 @@ tr.shipping input {height: 12px; width: auto;}
 }
 .faq-area .panel-title > a.collapsed {color: #707070;}
 .faq-area .panel-text p {margin: 0;}
+
+.pagination_custom{
+    z-index: 3;
+    color: #fff;
+    background-color: white;
+    border-color: white;
+}
+
+dl, ol, ul {
+    margin-bottom: 0 !important;
+}
+

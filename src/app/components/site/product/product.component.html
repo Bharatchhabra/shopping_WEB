@@ -3,10 +3,10 @@
  <div class="breadcrumb-area bg-2 text-center">
   <div class="container">
       <h1>Product</h1>
-      <nav aria-label="breadcrumb" style="background-color: transparent!important;  ">
+      <nav aria-label="breadcrumb" >
           <ul class="breadcrumb" style="background-color: transparent!important;">
               <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Single Shop</li>
+              <li class="breadcrumb-item " aria-current="page">Single Shop</li>
           </ul>
       </nav>
   </div>
@@ -56,11 +56,13 @@
                   <div class="p-thumb"><img src="assets/img/product/details/photo19.jpg" alt=""></div>
                   <div class="p-thumb"><img src="assets/img/product/details/photo19.jpg" alt=""></div>
                   <div class="p-thumb"><img src="assets/img/product/details/photo19.jpg" alt=""></div> -->
-              </div>
+                  
+                
+                </div>
           </div>
           <div class="col-lg-7 col-md-6">
               <div class="product-details-text">
-                  <h3>Room Decoration Items</h3>
+                  <h3>Room Decoration Items</h3>               
                   <div class="p-rating-review">
                       <div class="product-rating">
                           <i class="fa fa-star color"></i>
@@ -69,7 +71,7 @@
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
                       </div>
-                      <a href="#" class="scroll-down">(2 customer reviews)</a>
+                      <a href="#" class="scroll-down">(2 customer review)</a>
                   </div>
                   <h4><span>$515.00</span>$499.00</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.</p>
@@ -170,13 +172,22 @@
                       <form action="#" method="post" class="rating-form">
                           <label>Add a review</label>
                           <h5>your rating</h5>
-                          <div class="submit-rating">
+                          
+                          <div class="p-rating-review">
+                            <div class="product-rating">
+                              <form action=""> <input class="star star-5" id="star-5" type="radio" name="star" /> <label class="star star-5" for="star-5"></label> <input class="star star-4" id="star-4" type="radio" name="star" /> <label class="star star-4" for="star-4"></label> <input class="star star-3" id="star-3" type="radio" name="star" /> <label class="star star-3" for="star-3"></label> <input class="star star-2" id="star-2" type="radio" name="star" /> <label class="star star-2" for="star-2"></label> <input class="star star-1" id="star-1" type="radio" name="star" /> <label class="star star-1" for="star-1"></label> </form>
+                            </div>
+                            <a class="scroll-down">(review here)</a>
+                        </div>
+
+
+                          <!-- <div class="submit-rating">
                               <i class="fa fa-star-o"></i>
                               <i class="fa fa-star-o"></i>
                               <i class="fa fa-star-o"></i>
                               <i class="fa fa-star-o"></i>
                               <i class="fa fa-star-o"></i>
-                          </div>
+                          </div> -->
                           <label for="r-textarea">Your Review</label>
                           <textarea name="review" id="r-textarea" cols="30" rows="10"></textarea>
                           <label for="r-name">Name *</label>
@@ -196,8 +207,11 @@
 <div class="product-area pt-100 fix">
   <div class="container">
       <h3 class="subtitle-2">You may also like…</h3>
+      <div class="alert alert-dark" role="alert">
+        No Product Avalable..!!
+       </div>
   </div>
-  <div class="container">
+  <!-- <div class="container">
       <div class="row">
           <div class="product-carousel owl-carousel carousel-style-one">
               <div class="custom-col">
@@ -469,15 +483,18 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> -->
 </div>
 <!-- Product Area End -->
 <!-- Product Area Start -->
 <div class="product-area related-product pt-95 pb-100 fix">
   <div class="container">
       <h3 class="subtitle-2">Related products</h3>
+      <div class="alert alert-dark" role="alert">
+        No Product Avalable..!!
+       </div>
   </div>
-  <div class="container">
+  <!-- <div class="container">
       <div class="row">
           <div class="product-carousel owl-carousel carousel-style-one">
               <div class="custom-col">
@@ -602,7 +619,7 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> -->
 </div>
 
 <!-- Product Area End -->

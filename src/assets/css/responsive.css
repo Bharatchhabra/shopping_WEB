@@ -333,6 +333,10 @@
     .display-none-xs, .slider-text p, .banner-text-container p br, .banner-full p br, .single-service:nth-of-type(2)::before, .single-service:nth-of-type(2)::after, .about-text > h1 br, .section-title-3 > p br, .abt-service-image {
         display: none;
     }  
+    .fixed-top {
+        position: unset !important;
+    }
+    
     .banner-container {padding-left: 10px; padding-right: 10px;} 
     .header-sticky.sticky, .header-three-area, .header-four-area {position: inherit;}
     .mainmenu-area {
@@ -350,7 +354,7 @@
     .logo {padding: 18px 0 16px; display: flex;}
     .header-content > div > a {line-height: 55px;}
     .header-content {padding-top: 14px;}
-    .header-content > div {margin-left: 20px; position: relative;}
+    .header-content > div {left: -136px; position: relative;}
     .header-content .settings-wrapper {margin-left: 15px;}
     .search-wrapper .search-form {height: 40px; right: -10px; width: 207px;}
     .cart-item-wrapper {padding: 12px 10px 11px; width: 230px;}
@@ -358,7 +362,7 @@
     .cart-price-total {margin-bottom: 12px; padding: 0;}
     .cart-links > a:first-of-type {margin-bottom: 10px;}
     .cart-links > a {line-height: 35px;}
-    .settings-content {padding: 15px 15px 12px; width: 193px;}
+    .settings-content {padding: 15px 15px 12px; width: 193px; left: auto;}
     .settings-content > ul {margin-bottom: 15px;}
     .settings-content > h4 {margin-bottom: 10px; padding-bottom: 8px;}
     .settings-content li {margin-bottom: 7px;}
@@ -673,6 +677,8 @@
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+ 
+     .header-res{ margin-left: 0px;}
     .blog-image {float: left; width: 48%;}
     .blog-text {padding-left: 20px; padding-top: 0;}
     .banner-area .row .col-lg-6:last-child .col-lg-6, .small-product-blog-area .col-xl-6 .col-md-6, #grid .col-xl-4, #grid .col-xl-3 {

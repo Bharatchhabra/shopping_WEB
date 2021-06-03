@@ -12,6 +12,8 @@ import {AccountComponent} from './components/site/account/account.component';
 import {CartComponent} from './components/site/cart/cart.component';
 import {CustomerprofilepageComponent} from './components/site/customerprofilepage/customerprofilepage.component';
 import {SliderhomeComponent} from './components/site/sliderhome/sliderhome.component';
+import { BlogComponent } from './components/site/blog/blog.component';
+import { ErrorComponent } from './components/site/error/error.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   { path: 'home', component: HomeComponent },
@@ -26,6 +28,8 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent},
   { path: 'customerprofile', component:CustomerprofilepageComponent},
   { path: 'sliderhome', component:SliderhomeComponent},
+  { path: 'blog', component:BlogComponent},
+  {path:'**',component:ErrorComponent}
 
   
    
