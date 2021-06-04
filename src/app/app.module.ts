@@ -23,7 +23,8 @@ import { SliderhomeComponent } from './components/site/sliderhome/sliderhome.com
 // import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { BlogComponent } from './components/site/blog/blog.component';
-import { ErrorComponent } from './components/site/error/error.component'
+import { ErrorComponent } from './components/site/error/error.component';
+import { BloglistComponent } from './components/site/bloglist/bloglist.component'
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { ErrorComponent } from './components/site/error/error.component'
     SliderhomeComponent,
     BlogComponent,
     ErrorComponent,
+    BloglistComponent,
     
   ],
   imports: [

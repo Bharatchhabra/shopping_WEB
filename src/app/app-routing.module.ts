@@ -14,6 +14,7 @@ import {CustomerprofilepageComponent} from './components/site/customerprofilepag
 import {SliderhomeComponent} from './components/site/sliderhome/sliderhome.component';
 import { BlogComponent } from './components/site/blog/blog.component';
 import { ErrorComponent } from './components/site/error/error.component';
+import { BloglistComponent } from './components/site/bloglist/bloglist.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   { path: 'home', component: HomeComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'customerprofile', component:CustomerprofilepageComponent},
   { path: 'sliderhome', component:SliderhomeComponent},
   { path: 'blog', component:BlogComponent},
+  { path: 'bloglist', component:BloglistComponent},
   {path:'**',component:ErrorComponent}
 
   
